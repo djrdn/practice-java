@@ -1,0 +1,16 @@
+package InheritanceAndEncapsulation;
+
+public class ElectricCar extends Car {
+    private int batteryCapacity;
+
+    public ElectricCar(String brand, String model, int year, int id, int batteryCapacity){
+        super(brand, model, year, id);
+        this.batteryCapacity = batteryCapacity;
+    }
+
+    @Override
+    public void printInfo(){
+        System.out.println("Марка авто: " + getBrand()  + ", модель: " + getModel() + ", рік випуску: " + getYear() + ", батарея: " + batteryCapacity);
+    }
+
+}

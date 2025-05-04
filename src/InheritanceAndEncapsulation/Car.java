@@ -1,3 +1,5 @@
+package InheritanceAndEncapsulation;
+
 public class Car {
     private String brand;
     private String model;

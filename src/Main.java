@@ -1,3 +1,7 @@
+//import InheritanceAndEncapsulation.Car;
+//import InheritanceAndEncapsulation.ElectricCar;
+import Abstraction.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,11 +9,11 @@ import java.util.List;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-      //  Car car1 = new Car("bmw", "m3", 2022);
-//        Car car2 = new Car("mercedes", "amg e63", 2017);
-//        Car car3 = new Car("audi", "rs6", 2020);
-//        Car car4 = new ElectricCar("Tesla", "Model S", 2021, 100); // електромобіль
-//        Car car5 = new ElectricCar("Nissan", "Leaf", 2019, 40);
+      //  InheritanceAndEncapsulation.Car car1 = new InheritanceAndEncapsulation.Car("bmw", "m3", 2022);
+//        InheritanceAndEncapsulation.Car car2 = new InheritanceAndEncapsulation.Car("mercedes", "amg e63", 2017);
+//        InheritanceAndEncapsulation.Car car3 = new InheritanceAndEncapsulation.Car("audi", "rs6", 2020);
+//        InheritanceAndEncapsulation.Car car4 = new InheritanceAndEncapsulation.ElectricCar("Tesla", "Model S", 2021, 100); // електромобіль
+//        InheritanceAndEncapsulation.Car car5 = new InheritanceAndEncapsulation.ElectricCar("Nissan", "Leaf", 2019, 40);
 //
 //        car1.printInfo();
 //        car2.printInfo();
@@ -17,15 +21,20 @@ public class Main {
 //        car4.printInfo();
 //        car5.printInfo();
 
-        List<Car> cars = new ArrayList<>();
-        cars.add(new Car("BMW", "M3", 2022));
-        cars.add(new Car("Mercedes", "AMG E63", 2017));
-        cars.add(new Car("Audi", "RS6", 2020));
-        cars.add(new ElectricCar("Tesla", "Model S", 2021, 100)); // електромобіль
-        cars.add(new ElectricCar("Nissan", "Leaf", 2019, 40));
-        for(Car car: cars){
-            car.printInfo();
-        }
+//        List<Car> cars = new ArrayList<>();
+//        cars.add(new Car("BMW", "M3", 2022));
+//        cars.add(new Car("Mercedes", "AMG E63", 2017));
+//        cars.add(new Car("Audi", "RS6", 2020));
+//        cars.add(new ElectricCar("Tesla", "Model S", 2021, 100)); // електромобіль
+//        cars.add(new ElectricCar("Nissan", "Leaf", 2019, 40));
+//        for(Car car: cars){
+//            car.printInfo();
+//        }
+
+        Car car = new Car();
+        car.move();
+        Bike bike = new Bike();
+        bike.move();
 
     }
 }

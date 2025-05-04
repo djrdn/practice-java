@@ -1,4 +1,6 @@
-public class ElectricCar extends Car{
+package InheritanceAndEncapsulation;
+
+public class ElectricCar extends Car {
     private int batteryCapacity;
 
     public ElectricCar(String brand, String model, int year, int batteryCapacity){

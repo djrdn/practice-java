@@ -4,11 +4,13 @@ public class Car {
     private String brand;
     private String model;
     private int year;
+    private int id;
 
-    public Car(String brand, String model, int year){
+    public Car(String brand, String model, int year, int id){
         this.brand=brand;
         this.model=model;
         setYear(year);//для валідації року випуску
+        this.id = id;
     }
 
     public void printInfo(){
@@ -41,5 +43,13 @@ public class Car {
         } else {
             throw new IllegalArgumentException("Недійсний рік випуску: " + year);
         }
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

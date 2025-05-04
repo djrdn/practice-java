@@ -3,8 +3,8 @@ package InheritanceAndEncapsulation;
 public class ElectricCar extends Car {
     private int batteryCapacity;
 
-    public ElectricCar(String brand, String model, int year, int batteryCapacity){
-        super(brand, model, year);
+    public ElectricCar(String brand, String model, int year, int id, int batteryCapacity){
+        super(brand, model, year, id);
         this.batteryCapacity = batteryCapacity;
     }
 

@@ -8,7 +8,7 @@ public class ElectricCar extends Car{
 
     @Override
     public void printInfo(){
-        System.out.println("Марка авто: " + brand  + ", модель: " + model + ", рік випуску: " + year + ", батарея: " + batteryCapacity);
+        System.out.println("Марка авто: " + getBrand()  + ", модель: " + getModel() + ", рік випуску: " + getYear() + ", батарея: " + batteryCapacity);
     }
 
 }
